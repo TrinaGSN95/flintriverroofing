@@ -1,3 +1,1395 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9546166978333b9de2ac9013ed2abff046abc9db81a1fe2db12ef83c43d160d2
-size 30935
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*UNDER CONSTRUCTION*/
+.under-c{
+    display:flex;
+    padding: 80px 70px 70px 70px;
+    display: flex;
+    justify-content: center;
+}
+.construction-page {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(229, 229, 229, 0.6);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title Styling */
+.construction-title {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Message Styling */
+.construction-text {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Loader Styling */
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #31b351;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+/* Loader Animation */
+.circle:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.circle:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+/* Message at the Bottom */
+.message {
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+/*UNDER CONS END*/
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between items */
+    background-color: #00613C; /* Green background */
+    padding: 10px 20px;
+    color: white;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    margin-left: auto; /* Push icons to the right */
+}
+
+.icon img {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+}
+
+/* official navbar*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white; /* Green background */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0px 0px 25px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.logo img {
+    height: 103px; /* Adjust logo size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative; /* For dropdown positioning */
+    margin: 6px 10px; /* Closer to the vertical line */
+
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight:500;
+    transition: background 0.3s;
+    font-size:15px
+}
+
+.nav-links a:hover {
+    color: rgba(13, 152, 10, 0.805); /* Hover effect */
+    font-weight:bold;
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown */
+    position: absolute; /* Position it below the parent */
+    background-color: white; /* Match navbar background */
+    min-width: 300%; /* Minimum width for dropdown */
+    z-index: 1000; /* Ensure it appears on top */
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: lightgray;
+    height: 60px; /* Adjust height as needed */
+    margin: 0 10px; /* Closer spacing */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    padding: 0px;
+    background-color:white;
+    color: white;
+    flex-direction:column;
+}
+
+.schedule, .call-us {
+    text-align: left; /* Align text to the left */
+}
+
+.schedule {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    padding: 0px 0px 5px 0px;
+}
+
+.schedule-text {
+    margin-left: 10px; /* Space between icon and text */
+}
+
+.schedule .cta-text {
+    font-size: 13px;
+    font-weight: normal;
+    color:gray;
+    margin: 0; /* Remove margin for spacing */
+}
+
+.schedule a {
+    display: block;
+    font-size: 18px;
+    margin-top: 0px; /* Adjust margin for spacing */
+    text-decoration: none;
+    color: #00613C; /* Green color for link */
+    font-weight: 500;
+}
+
+.call-us {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+}
+
+.call-us img {
+    margin-right: 10px; /* Space between icon and link */
+}
+
+.call-us a {
+    font-family:'roboto';
+    display: block;
+    font-size: 15px;
+    margin-top: 5px; /* Adjust margin for spacing */
+    text-decoration: none;
+    color: #4CAF50; /* Green color for link */
+    font-weight: bold;
+}
+
+.icon {
+    width: 24px; /* Adjust icon size */
+    height: 24px; /* Adjust icon size */
+    margin-bottom: 0px; /* Space between icon and text */
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+/*slider*/
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height:560px;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+    z-index: 1;
+}
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    z-index: 2; /* Ensure the text is above the overlay */
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    text-align: left;
+}
+
+h2 {
+    font-family:'roboto';
+    font-size: 2rem;
+    margin: 0;
+}
+
+p {
+    font-family:'roboto';
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.quote-button {
+    font-family:'roboto';
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.quote-button:hover {
+    background-color: #45a049;
+}
+
+/* Slider transition effect */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Navigation dots */
+.dots {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/*SERVICES SECTION*/
+.serv-tit{
+    font-size:33px;
+    font-family:'roboto';
+    font-weight:bold;
+
+}
+.services-section {
+    padding: 40px 80px 80px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    flex: 1 1 22%; /* Four items in one row on large screens */
+    margin: 15px;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-family:'roboto';
+    margin-top: 10px;
+    color: #333;
+    font-weight:400;
+}
+
+/* Button styling */
+.services-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services-cta-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-family:'roboto';
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.services-cta-button:hover {
+    background-color: #45a049;
+}
+.service-item:hover img {
+    transform: scale(1.0);
+    opacity: 0.9; /* Slightly darken the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/*cards motivation*/
+.motivation-section {
+    text-align: center;
+    padding: 80px;
+    background: linear-gradient(to bottom right, #333, #555); /* Dark gray gradient */
+}
+
+.motivation-section h2 {
+    font-family:'roboto';
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #fff; /* Light color for contrast */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Change cursor to pointer for clickable cards */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Card lifts up on hover */
+}
+
+.card-header {
+    display: flex;
+    justify-content: center; /* Center the icon */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+.card-icon {
+    width: 50px; /* Size of the icon */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+}
+
+.card:hover .card-icon {
+    transform: rotate(95deg); /* Rotate icon clockwise on card hover */
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    font-family:'roboto';
+    color: #4CAF50; /* Green color for titles */
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.4;
+}
+
+
+
+
+
+/*end cards*/
+
+/*before and after*/
+/*txt*/
+.flying-text{
+    font-family:'roboto';
+    position: absolute; /* Position absolutely within the slider */
+    top: 15%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center text */
+    font-size: 21px; /* Font size */
+    font-weight: bold;
+    color: #fff; /* Text color */
+    opacity: 1; /* Fully visible */
+    z-index: 2; /* Ensure text is above other elements */
+}
+
+.fa-arrows-alt-h:before, .fa-left-right:before {
+color: white;
+}
+.holder-ba{
+    position:relative;
+}
+.fa{
+    font-size: 0px;
+}
+.ante-despues {
+    position: relative;
+    height: 480px; /* Full viewport height */
+    width: 100%;  /* Full viewport width */
+    overflow: hidden; /* Hide overflow */
+}
+
+.antes, .despues {
+    position: absolute;
+    height: 100%; /* Full height of the container */
+    width: 100%;  /* Full width of the container */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+}
+.antes {
+    background-image: url('images/after.jpg'); /* Replace with your before image */
+}
+
+.despues {
+    background-image: url('images/before2.png'); /* Replace with your after image */
+   
+}
+
+.ventana {
+    position: absolute;
+    width: 2px; /* Width of the slider */
+    height: 100%;
+    background: green; /* Color of the slider */
+    cursor: ew-resize;
+    left: 50%; /* Initial position */
+    transform: translateX(-50%); /* Center the ventana */
+    z-index: 1; /* Bring ventana above images */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.ventana i {
+    color: #fff; /* Color of the icon */
+    font-size: 24px; /* Size of the icon */
+    position: absolute; /* Ensure icons are positioned absolutely */
+    margin: 0; /* No margin */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.ventana i:first-child {
+    left: 0px; /* Position the left arrow to the left of the red line */
+}
+
+.ventana i:last-child {
+    right: 0px; /* Position the right arrow to the right of the red line */
+}
+
+.ventana i:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+/*end before and after*/
+/*team*/
+.team-sectionlan{
+    max-width: 100%; /* Maximum width for the team section */
+            margin: 70px 70px 70px 70px;
+            padding: 40px 40px 40px 40px;
+            background-color: #fff; /* White background for the team section */
+            border-radius: 10px; /* Rounded corners */
+            /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+
+}
+
+        /* Team Section Styles */
+        .team-section {
+            max-width: 100%; /* Maximum width for the team section */
+            margin: 70px 70px 70px 70px;
+            padding: 40px 40px 40px 40px;
+            background-color: #fff; /* White background for the team section */
+            border-radius: 10px; /* Rounded corners */
+            /*box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        }
+
+        .team-title {
+            font-family:'roboto';
+            text-align: left; /* Center the title */
+            font-size: 30px; /* Large font size for the title */
+            margin-bottom: 12px; /* Space below the title */
+            margin-top: 0px;
+        }
+
+        .highlight {
+            background-color: #4CAF50; /* Green background for highlight */
+            color: white; /* White text color */
+            padding: 5px; /* Padding around the text */
+            border-radius: 5px 20px 5px 20px;; /* Rounded corners for the highlight */
+        }
+
+        .team-content {
+            font-family:'roboto';
+            display: flex; /* Flexbox layout for the team content */
+            align-items: center; /* Center align items vertically */
+        }
+        .green-button {
+            font-family:'roboto';
+            display: inline-block; /* Make it an inline block for proper spacing */
+            padding: 10px 20px; /* Padding for the button */
+            background-color: #00613C; /* Green background color */
+            color: white; /* White text color */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            margin-top: 10px; /* Space above the button */
+            font-weight:bold;
+            font-size: 15px;
+        }
+        
+        .green-button:hover {
+            font-family:'roboto';
+            background-color: #040f05; /* Darker green on hover */
+        } 
+.team-txt{
+    line-height: 1.2;
+    font-weight:500;
+    font-family:'roboto';
+    font-size:15px;
+    color:#555;
+    
+}
+        .team-photo {
+            width: 50%; /* Fixed width for the photo */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for the photo */
+            margin-right: 30px; /* Space between photo and text */
+        }
+
+        .team-description {
+            flex: 1; /* Allow the description to take up remaining space */
+            font-size: 1em; /* Font size for description */
+        }
+/*end team*/
+/*testimonial*/
+.testimonials-section {
+    padding: 83px 70px 83px 70px;
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #00613C);
+    color: #333;
+  }
+  
+  .testimonials-section h2 {
+    font-size:30px;
+    font-family: 'roboto';
+    margin-bottom: 33px;
+    color: #ffffff;
+  }
+  
+  .carousel {
+    position: relative;
+     max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .track {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  .entry {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 10px;
+  }
+  
+  .entry p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'roboto';
+    margin-bottom: 21px;
+  }
+  
+  .entry span {
+    font-size: 16px;
+    font-family: 'roboto';
+    color: #666;
+  }
+  
+  /* Arrow styling */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .arrow--left {
+    left: 30px;
+  }
+  
+  .arrow--right {
+    right: 10px;
+  }
+  
+  .arrow:hover {
+    color: #028f8a;
+  }
+
+  .highlighttwo{
+    background-color: #ffffff; /* Green background for highlight */
+            color: #00613C; /* White text color */
+            padding: 5px; /* Padding around the text */
+            border-radius: 5px 20px 5px 20px;; /* Rounded corners for the highlight */
+  }
+/*end testimonial*/
+/*FAQS*/
+
+/* Main layout styling */
+.layout {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Info panel styling */
+.info-panel {
+    width: 50%;
+    padding: 70px 10px 70px 98px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    font-family: 'roboto';
+    font-weight:400;
+    font-size:15px;
+    line-height:1.6;
+
+}
+
+.question {
+    border: solid 1px #969696;
+    font-size: 18px;
+    font-family: 'Roboto';
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px;
+    color:#333;
+    border-radius: 3px;
+}
+
+.answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.cta {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'roboto';
+    font-weight:bold;
+    text-align: center;
+    width: 50%;
+    border-radius:5px;
+}
+
+.cta:hover {
+    background-color: #1a530a;
+}
+
+/* Display section styling */
+.display {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-series {
+    display: flex;
+    width: 100%;
+    
+}
+.image-series img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute; /* Positions images on top of each other */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth fade */
+}
+
+.image-series img:first-child {
+    opacity: 1; /* Ensure the first image is visible on load */
+}
+
+/*location*/
+/* Two-column layout */
+.two-column-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 72px 70px 72px 70px;
+    gap: 20px;
+}
+
+/* Left text panel */
+.text-panel {
+    flex: 1;
+    padding:20px 40px 20px 40px;
+    border-radius: 8px;
+}
+
+.text-panel h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.text-panel p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+/* Button styling */
+.cta-button {
+
+    font-family: 'roboto';
+    background-color: #00613C;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    padding:10px 20px;
+    border:none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #078b58;
+}
+
+/* Right map panel */
+.map-panel {
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden; /* Ensures the map iframe corners are rounded */
+}
+
+
+
+/*end loc*/
+
+/*Start footer*/
+
+
+
+/*first sec footer*/
+.three-column-layout {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-between;
+    padding: 72px 40px 54px 40px;
+    gap: 20px; /* Space between columns */
+}
+
+/* Individual info item styling */
+.info-item {
+    flex: 1; /* Each column takes equal space */
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center vertically */
+    padding: 30px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Placeholder for images */
+.image-placeholder {
+    margin-right: 15px; /* Space between image and text */
+}
+
+.image-placeholder img {
+    width: 40px; /* Adjust the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Text content styling */
+.info-content h3 {
+    margin: 0;
+    font-size: 21px;
+    font-family: 'roboto';
+    color: #ffffff; /* Dark text for contrast */
+}
+
+.info-content p {
+    margin: 5px 0 0; /* Add some margin above the paragraph */
+    font-size: 18px;
+    color: #ffffff; /* Slightly lighter text color */
+    font-family:'roboto';
+    font-weight:400;
+}
+/*End sec footer*/
+/*Start of the end footer*/
+/* Four-column layout */
+.four-column-layout {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: black; /* Background color */
+    color: white; /* Text color */
+    padding: 18px 40px 72px 40px;
+   border-top: 1px #2a322a solid;
+}
+.infotxtcol{
+    text-align:left;
+    font-family: 'roboto';
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.footlogo{
+    width:200px;
+}
+.footl{
+    font-family: 'roboto';
+    font-size: 15px;
+    color:white;
+    text-decoration:none;
+    padding: 5px 10px 5px 10px;
+
+}
+.footl:hover{
+    font-family: 'roboto';
+    font-size: 15px;
+    color:rgb(23, 199, 55);
+    text-decoration:none;
+    padding: 5px 10px 5px 10px;
+    text-decoration:none;
+
+}
+
+/* Individual info column styling */
+.info-column {
+    flex: 1; /* Each column takes equal space */
+    padding: 3px;
+    display:flex;
+    justify-content: center;
+}
+
+/* Logo space styling */
+.logo-space img {
+    max-width: 60%; /* Ensures logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Menu Links and Additional Links styling */
+.info-column ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.info-column ul li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.info-column a {
+    color:white;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.info-column a:hover {
+    color:rgb(22, 182, 48);
+}
+
+/*end footer*/
+/*About us*/
+/* General styles for images */
+/* Header Section */
+.header-section {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 40px; /* Ample padding for a bold look */
+    text-align: center; /* Center text */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100px; /* Fixed height for the header */
+}
+
+/* Company Info Section */
+.company-info {
+    padding: 70px 70px 50px 70px;
+    text-align: center; /* Center content */
+}
+
+.mission-statement {
+    margin: 20px 0; /* Space around the mission statement */
+}
+
+.ceo-section {
+    display: flex; /* Flexbox for CEO layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between elements */
+    padding: 20px;
+}
+
+/* CEO Description */
+.ceo-description {
+    flex: 1; /* Take remaining space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+/* Image styling */
+.profile-image {
+    width: 40%; /* Set width for the founder's image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Make image circular */
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 40px; /* Space above team section */
+    display: flex;
+    flex-wrap: wrap; /* Wrap team members */
+    justify-content: space-between; /* Space between team members */
+    background-color:#00613C;
+}
+
+.team-member {
+    flex: 1 0 140px; /* Flex for responsiveness with minimum width */
+    margin: 10px; /* Space around each member */
+    background-color: #eaeaea; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside member boxes */
+}
+
+.member-image {
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Circular images */
+    margin-bottom: 10px; /* Space below images */
+}
+
+/* Member Name and Role */
+.team-member h4 {
+    margin: 10px 0 5px; /* Space above and below */
+    font-size: 20px; /* Size for member names */
+}
+
+.team-member p {
+    margin: 0; /* Remove margin from paragraph */
+    font-size: 16px; /* Size for roles */
+}
+.ab-title{
+    font-family:'roboto';
+    font-size:33px;
+    font-weight:bold;
+}
+.ab-titleceo {
+    font-family:'roboto';
+    font-size:33px;
+    font-weight:bold;
+    text-align:left;
+}
+.mission-statement{
+    font-family:'roboto';
+    font-size:15px;
+    font-weight:400;
+    color:#000000;
+    line-height:1.5;
+
+}
+
+.ab-titleteam{
+    font-family:'roboto';
+    font-size:33px;
+    font-weight:bold;
+    color:white;
+    width:100%;
+
+}
+.mission-statementceo{
+    font-family:'roboto';
+    font-size:15px;
+    font-weight:400;
+    color:#000000;
+    line-height:1.5;
+    text-align:left;
+
+}
+
+.rrow-link {
+    display: flex; /* Make it an inline block for spacing */
+    margin-top: 10px; /* Space above the link */
+    color: #4CAF50; /* Green color */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    text-align: left;
+}
+
+.rrow-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+/*end about us*/
+
+/* Keyframes for automatic image rotation */
+@keyframes auto-rotate {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* Arrow styling */
+.question .indicator {
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+
+
+/*END FAQ*/
+
+
+/*SERVICES*/
+/* Header Styling */
+
+/* General Service Section Styling */
+.service-section {
+    display: flex;
+    flex-wrap: wrap; /* Flexbox for responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px 70px 70px;
+    background-color: #ffffff; /* Light background for sections without gradient */
+}
+
+.service-section .content {
+    flex: 1 1 50%;
+    padding: 20px;
+    color: #333;
+    font-size:15px;
+    line-height:1.5;
+}
+
+.service-section .content h2 {
+    font-size: 33px;
+    color: #01170a; /* Dark color for contrast */
+    margin-bottom: 10px;
+}
+
+
+
+.image-placeholderser {
+    flex: 1 1 50%;
+    text-align: center;
+    padding-left:20px;
+    
+}
+.image-placeholderout{
+padding:0;
+}
+
+.image-placeholderser img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display:flex;
+    
+}
+
+/* Gradient Backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #4CAF50, #81C784); /* Green gradient */
+    color: white;
+}
+
+.sertitw{
+    font-family:'roboto';
+    font-size:33px;
+    color:white;
+    font-weight:bold;
+}
+p.sertxtw{
+    font-family:'roboto';
+    font-size:15px;
+    color:white;
+    font-weight:400;
+    line-height:1.5;
+}
+p.sertitb{
+    font-family:'roboto';
+    font-size:15px;
+    color:rgb(0, 0, 0);
+    font-weight:400;
+    line-height:1.5;
+}
+/* Section Background Styling */
+.layered-background {
+    display: flex;
+    padding: 70px 70px 70px 70px;
+    background: linear-gradient(135deg, #ffffff, #c1ffe6);
+    align-items: center;
+}
+
+/* Left Side Text Styling */
+.lefty-content {
+    flex: 1 1 50%;
+    padding: 20px;
+    color: #333;
+    order: -1; /* Forces text to the left */
+}
+
+/* Right Side Image Styling */
+.pic-box {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+.pic-box img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*END SERVICES*/
+
+/*CONTACT*/
+
+.contact-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.quote-request{
+    padding:70px 70px 70px 70px;
+    background-color: beige;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top:15px;
+
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family:'roboto'
+}
+.contact-button{
+    padding: 10px 20px;
+    font-family:'roboto';
+    font-size:15px;
+    font-weight:bold;
+    width:30%;
+    border:none;
+    background-color:#078b58;
+    color:white;
+    border-radius:5px;
+}
+.contact-button:hover{
+    background-color:#15ad72;
+    cursor:pointer;
+
+}
+.contacto-info{
+    display:flex;
+    max-width: 100%;
+    padding: 10px 70px 42px 70px;
+    background-color: white;
+    border-radius: 8px;
+    align-items:center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tit-co{
+    padding:70px 70px 12px 70px;
+}
+.svg-con{
+    width:10%;
+}
+.con-in{
+    font-family:'roboto';
+    font-size:15px;
+    font-weight:400;
+    color:black;
+
+}
+.send-review{
+    padding:70px 70px 70px 70px;
+    background-color: beige;
+
+
+}
+.send-message{
+    padding:70px 70px 70px 70px;
+}
+/*END CONTACT*/
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+        margin-left: 0; /* Reset left margin for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align to the start */
+    }
+    
+    .nav-links {
+        flex-direction: column; /* Stack links */
+        width: 100%; /* Full width */
+        display: none; /* Hide links by default */
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+    
+    .nav-links li {
+        margin: 5px 0; /* Space between links */
+    }
+    
+    .vertical-line {
+        display: none; /* Hide vertical line on smaller screens */
+    }
+    
+    .contact-info {
+        flex-direction: row; /* Display contact info horizontally */
+        margin-top: 10px; /* Space between navbar and contact info */
+    }
+    
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+   
+}

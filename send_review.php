@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6683d57bb6283370b75ae8b3fb6df0297070a49c094761f33a3924120c5e0fa
-size 605
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $reviewer_name = htmlspecialchars($_POST['reviewer_name']);
+    $review = htmlspecialchars($_POST['review']);
+    
+    $to = 'Brandon@flintriverroofing.com'; // Change to your email
+    $subject = 'Review from ' . $reviewer_name;
+    $body = "Reviewer: $reviewer_name\nReview: $review";
+    $headers = "From: $reviewer_name <your-email@example.com>"; // Update with a valid email
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Review sent successfully!";
+    } else {
+        echo "Failed to send review.";
+    }
+}
+?>

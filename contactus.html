@@ -1,3 +1,215 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a066d0322205e32b65a0505b646caf2047115d4f02960836131b790e6d7a4ccd
-size 8695
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Flint River Roofing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--navbar-->
+    <div class="top-bar">
+        <div class="location">
+            <img src="images/location.svg"" alt="Location Icon" class="icon" />
+            <span>Atlanta Metropolitan Area</span>
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="" class="icon">
+                <img src="images/phone.svg" alt="" />
+            </a>
+            <a href="#" aria-label="" class="icon">
+                <img src="images/facebook.svg" alt="" />
+            </a>
+            <a href="#" aria-label="" class="icon">
+                <img src="images/linkedin.svg" alt="" />
+            </a>
+            <a href="#" aria-label="" class="icon">
+                <img src="images/email.svg" alt="" />
+            </a>
+          
+        </div>
+    </div>
+    <!-- top header -->
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logoroofing.png" alt="Logo" />
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+            <li class="dropdown">
+                <a href="ourservices.html">Our Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        <div class="vertical-line"></div>
+        <div class="contact-info">
+            <div class="schedule">
+                <img src="images/schedule.svg" alt="Schedule Icon" class="icon" />
+                <div class="schedule-text">
+                    <p class="cta-text">Schedule a Call</p>
+                    <a href="#">Get a Quote</a>
+                </div>
+            </div>
+            <div class="schedule">
+                    <img src="images/phoneof.svg" alt="Phone Icon" class="icon" />
+                    <div class="schedule-text">
+                        <p class="cta-text">Give us a Call</p>
+                        <a href="#">+1-000-000-0000</a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <!--endnavbar-->
+    <!--contact header-->
+    <div class="header-section">
+        <h1>Contact us</h1>
+    </div>
+    <!-- end contact header-->
+    <section class="quote-request">
+        <h2>Request a <span class="highlight"> Quote</span></h2>
+        <form action="send_quote.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Details about your project" required></textarea>
+            <button class="contact-button" type="submit">Send Quote Request</button>
+        </form>
+    </section>
+    <div class="tit-co">
+    <h2>Contact Information</h2>
+</div>
+    <section class="contacto-info">
+    
+    
+      <img class="svg-con" src="images/email.svg"/>  <p class="con-in">Email: <a href="mailto:Brandon@flintriverroofing.com">Brandon@flintriverroofing.com</a></p>
+        <img class="svg-con" src="images/phone.svg"/><p class="con-in">Phone: <a href="tel:+16782069725">+1 (678) 206-9725</a></p>
+        <p class="con-in">Address: 408 Rising Star Rd, Brooks, GA 30205</p>
+    </section>
+
+    <section class="send-review">
+        <h2>Send Us <span class="highlight">Review</span></h2>
+        <form action="send_review.php" method="POST">
+            <input type="text" name="reviewer_name" placeholder="Your Name" required>
+            <textarea name="review" placeholder="Your Review" required></textarea>
+            <button  class="contact-button" type="submit">Send Review</button>
+        </form>
+    </section>
+
+    <section class="send-message">
+        <h2>Send Us a <span class="highlight">Message</span></h2>
+        <form action="send_message.php" method="POST">
+            <input type="text" name="sender_name" placeholder="Your Name" required>
+            <input type="email" name="sender_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button  class="contact-button"type="submit">Send Message</button>
+        </form>
+    </section>
+
+<!--end contact page-->
+<div class="two-column-layout">
+    <!-- Left Column: Google Map -->
+    <div class="map-panel">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26679.91330397827!2d-84.4584299!3d33.2929465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe94c17b019a693f%3A0xd80e0194aa5bec83!2sFlint%20River%20Roofing!5e0!3m2!1ses-419!2sdo!4v1730378610747!5m2!1ses-419!2sdo" 
+            width="100%" 
+            height="450"
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Right Column: Text Content -->
+    <div class="text-panel">
+        <h2>Where to <span class="highlight">Find Us?</span></h2>
+        <p>Located conveniently in the heart of the region, we offer services across a wide area, ensuring that quality roofing is accessible to everyone.</p>
+        <button class="cta-button">Open Google Maps</button>
+    </div>
+</div>
+  <!--end location-->
+  <!-- footer-->
+  <div class="three-column-layout">
+    <!-- 1st Column: Email -->
+    <div class="info-item">
+        <div class="image-placeholder">
+            <img src="images/footeremail.svg" alt="Email Icon">
+        </div>
+        <div class="info-content">
+            <h3>Email</h3>
+            <p>Brandon@flintriverroofing.com</p>
+        </div>
+    </div>
+
+    <!-- 2nd Column: Phone Number -->
+    <div class="info-item">
+        <div class="image-placeholder">
+            <img src="images/footer phone.svg" alt="Phone Icon">
+        </div>
+        <div class="info-content">
+            <h3>Phone Number</h3>
+            <p>678-206-9725</p>
+        </div>
+    </div>
+
+    <!-- 3rd Column: Address -->
+    <div class="info-item">
+        <div class="image-placeholder">
+            <img src="images/locationfooter.svg"Address Icon">
+        </div>
+        <div class="info-content">
+            <h3>Address</h3>
+            <p>408 Rising Star Rd | Brooks, GA 30205</p>
+        </div>
+    </div>
+</div>
+<!--continuum of footer-->
+<div class="four-column-layout">
+  <!-- 1st Column: Company Information -->
+  <div class="info-column company-infofoot">
+      <p class="infotxtcol"> At Flint River Roofing, we pride ourselves on providing the best roofing solutions for your house or business.You'll be treated with the utmost care and professionalism.<br> Your satisfaction is our top priority, and we strive to exceed your expectations with every project.</p>
+  </div>
+
+  <!-- 2nd Column: Menu Links -->
+  <div class="info-column menu-links">
+      <ul>
+          <li class="footl"><a href="#">Home</a></li>
+          <li class="footl"><a href="#">About Us</a></li>
+          <li class="footl"><a href="#">Services</a></li>
+      </ul>
+  </div>
+
+  <!-- 3rd Column: Additional Links -->
+  <div class="info-column additional-links">
+     
+      <ul>
+          <li class="footl"><a  href="#" >Testimonials</a></li>
+          <li class="footl"><a href="#">Blog</a></li>
+          <li class="footl"><a href="#">Contact Us</a></li>
+      </ul>
+  </div>
+
+  <!-- 4th Column: Space for Logo -->
+  <div class="info-column logo-space">
+      <img class="footlogo"src="images/footerlogo.png" alt="Company Logo" />
+  </div>
+</div>
+  <!--end footer-->
+</body>
+</html>

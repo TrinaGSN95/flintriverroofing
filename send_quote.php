@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a338f43af32312602c4c6b45b43e719006691890bad0c26cf3a0b4052178f94c
-size 592
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    $to = 'Brandon@flintriverroofing.com'; // Change to your email
+    $subject = 'Quote Request from ' . $name;
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $headers = "From: $email";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Quote request sent successfully!";
+    } else {
+        echo "Failed to send quote request.";
+    }
+}
+?>
