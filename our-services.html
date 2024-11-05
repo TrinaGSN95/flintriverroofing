@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services- Flint River Roofing</title>
+    <title>Flint River Roofing</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -20,16 +21,16 @@
             <span>Atlanta Metropolitan Area</span>
         </div>
         <div class="social-icons">
-            <a href="#" aria-label="" class="icon">
+            <a href="tel:+678-206-9725" aria-label="" class="icon">
                 <img src="images/phone.svg" alt="" />
             </a>
-            <a href="#" aria-label="" class="icon">
+            <a href="https://www.facebook.com/brandon.hurst.1614/" aria-label="" class="icon">
                 <img src="images/facebook.svg" alt="" />
             </a>
-            <a href="#" aria-label="" class="icon">
+            <a href="https://www.linkedin.com/in/brandon-hurst-2560b915a" aria-label="" class="icon">
                 <img src="images/linkedin.svg" alt="" />
             </a>
-            <a href="#" aria-label="" class="icon">
+            <a href="mailto:Brandon@flintriverroofing.com" aria-label="" class="icon">
                 <img src="images/email.svg" alt="" />
             </a>
           
@@ -39,7 +40,7 @@
 
     <nav class="navbar">
         <div class="logo">
-            <img src="images/logoroofing.png" alt="Logo" />
+            <a href="index.html"><img  src="images/logoroofing.png" alt="Logo" /></a>
         </div>
         <div class="hamburger" id="hamburger">
             <div class="line"></div>
@@ -47,18 +48,18 @@
             <div class="line"></div>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="Aboutus.html">About Us</a></li>
-            <li class="dropdown">
-                <a href="ourservices.html">Our Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
-                </ul>
-            </li>
+            <button id="closeNavBtn">&times;</button> <!-- Close button -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li> <a href="our-services.html">Our Services</a></li>
+            <!---<ul class="dropdown-content"
+               --<li><a href="#">Service 1</a></li>
+               <li><a href="#">Service 2</a></li>
+               <li><a href="#">Service 3</a></li>
+           </ul>
+       </li> -->
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <div class="vertical-line"></div>
         <div class="contact-info">
@@ -66,19 +67,20 @@
                 <img src="images/schedule.svg" alt="Schedule Icon" class="icon" />
                 <div class="schedule-text">
                     <p class="cta-text">Schedule a Call</p>
-                    <a href="#">Get a Quote</a>
+                    <a href="contact-us.html">Get a Quote</a>
                 </div>
             </div>
             <div class="schedule">
                     <img src="images/phoneof.svg" alt="Phone Icon" class="icon" />
                     <div class="schedule-text">
                         <p class="cta-text">Give us a Call</p>
-                        <a href="#">+1-000-000-0000</a>
+                        <a href="tel:+678-206-9725">678-206-9725</a>
                     </div>
             </div>
             </div>
         </div>
     </nav>
+    <!--end navbar-->
     <!--end navbar-->
        <!--services-->
    <div class="header-section">
@@ -152,22 +154,24 @@
     <!-- 1st Column: Email -->
     <div class="info-item">
         <div class="image-placeholder">
-            <img src="images/footeremail.svg" alt="Email Icon">
+          <a class="links-on-footer" href="mailto:Brandon@flintriverroofing.com">  <img src="images/footeremail.svg" alt="Email Icon">
         </div>
         <div class="info-content">
             <h3>Email</h3>
             <p>Brandon@flintriverroofing.com</p>
+          </a>
         </div>
     </div>
 
     <!-- 2nd Column: Phone Number -->
     <div class="info-item">
         <div class="image-placeholder">
-            <img src="images/footer phone.svg" alt="Phone Icon">
+            <a class="links-on-footer" href="tel:+678-206-9725"><img src="images/footer phone.svg" alt="Phone Icon">
         </div>
         <div class="info-content">
             <h3>Phone Number</h3>
             <p>678-206-9725</p>
+          </a>
         </div>
     </div>
 
@@ -194,9 +198,9 @@
   <div class="info-column menu-links">
     
       <ul>
-          <li class="footl"><a href="#">Home</a></li>
-          <li class="footl"><a href="#">About Us</a></li>
-          <li class="footl"><a href="#">Services</a></li>
+          <li class="footl"><a href="index.html">Home</a></li>
+          <li class="footl"><a href="about-us.html">About Us</a></li>
+          <li class="footl"><a href="our-services.html">Services</a></li>
       </ul>
   </div>
 
@@ -204,9 +208,9 @@
   <div class="info-column additional-links">
      
       <ul>
-          <li class="footl"><a  href="#" >Testimonials</a></li>
-          <li class="footl"><a href="#">Blog</a></li>
-          <li class="footl"><a href="#">Contact Us</a></li>
+          <!--<li class="footl"><a  href="#" >Testimonials</a></li>-->
+          <li class="footl"><a href="blog.html">Blog</a></li>
+          <li class="footl"><a href="contact-us.html">Contact Us</a></li>
       </ul>
   </div>
 
@@ -216,17 +220,27 @@
   </div>
 </div>
   <!--end footer-->
+  <!--end footer-->
+<!--language switcher-->
+<div class="floating-language-switcher">
+    <button class="floating-language-btn" onclick="toggleLanguageDropdown()">🌍 Idioma</button>
+    <div id="languageDropdown" class="language-dropdown-menu">
+        <a href="our-services.html" class="language-option">
+            <img src="images/usdflag.svg" alt="English Flag" class="flag-icon"> <p class="ic-flag">Engligh</p>
+        </a>
+        <a href="servicios.html" class="language-option">
+            <img src="images/spainflag.svg" alt="Spanish Flag" class="flag-icon"><p class="ic-flag">Español</p>
+        
+        </a>
+    </div>
+</div>
 
+<!--end of language switcher-->
 
   <script src="script.js"></script> <!-- Link to JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="language-switcher.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-
-
-
-
 </body>
 </html>

@@ -1,28 +1,23 @@
-document.getElementById('hamburger').addEventListener('click', function() {
-    const navLinks = document.getElementById('nav-links');
+//document.getElementById('hamburger').addEventListener('click', function() {
+   // const navLinks = document.getElementById('nav-links');
+    //navLinks.classList.toggle('active');
+//});
+
+//close nav
+
+const navLinks = document.getElementById('nav-links');
+const hamburger = document.getElementById('hamburger');
+const closeNavBtn = document.getElementById('closeNavBtn');
+
+// Toggle navigation open and close when clicking the hamburger icon
+hamburger.addEventListener('click', function() {
     navLinks.classList.toggle('active');
 });
 
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-    
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  // Hide all slides
-    }
-    
-    slideIndex++;
-    
-    if (slideIndex > slides.length) { 
-        slideIndex = 1;  // Go back to the first slide
-    }
-    
-    slides[slideIndex - 1].style.display = "block";  // Display the current slide
-    
-    setTimeout(showSlides, 5000);  // Change slide every 5 seconds
-}
+// Close navigation when clicking the close button
+closeNavBtn.addEventListener('click', function() {
+    navLinks.classList.remove('active'); // Ensures it only closes
+});
 //before and after
 // Get elements from the DOM
 const ventana = document.getElementById('ventana');

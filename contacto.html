@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flint River Roofing</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+    <!-- Link to  responsive CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-5e2ESR8Ycmos6g3gAKr1Jvwye8sW4U1u/cAKulfVJnkakCcMqhOudbtPnvJ+nbv7" crossorigin="anonymous">
+
+    
+
+</head>
+<body>
+    <div class="top-bar">
+        <div class="location">
+            <img src="images/location.svg"" alt="Location Icon" class="icon" />
+            <span>Área Metropolitana de Atlanta</span>
+        </div>
+        <div class="social-icons">
+            <a href="tel:+678-206-9725" aria-label="" class="icon">
+                <img src="images/phone.svg" alt="" />
+            </a>
+            <a href="https://www.facebook.com/brandon.hurst.1614/" aria-label="" class="icon">
+                <img src="images/facebook.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/brandon-hurst-2560b915a" aria-label="" class="icon">
+                <img src="images/linkedin.svg" alt="" />
+            </a>
+            <a href="mailto:Brandon@flintriverroofing.com" aria-label="" class="icon">
+                <img src="images/email.svg" alt="" />
+            </a>
+          
+        </div>
+    </div>
+    <!-- top header -->
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img  src="images/logoroofing.png" alt="Logo" /></a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <button id="closeNavBtn">&times;</button> <!-- Close button -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li> <a href="our-services.html">Servicios</a></li>
+                 <!---<ul class="dropdown-content"
+                    --<li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            </li> -->
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact-us.html">Contáctenos</a></li>
+        </ul>
+        <div class="vertical-line"></div>
+        <div class="contact-info">
+            <div class="schedule">
+                <img src="images/schedule.svg" alt="Schedule Icon" class="icon" />
+                <div class="schedule-text">
+                    <p class="cta-text">Agenda una Llamada</p>
+                    <a href="contact-us.html">Obtén Cotización</a>
+                </div>
+            </div>
+            <div class="schedule">
+                    <img src="images/phoneof.svg" alt="Phone Icon" class="icon" />
+                    <div class="schedule-text">
+                        <p class="cta-text"> Llámanos</p>
+                        <a href="tel:+678-779-9245">678-779-9245</a>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+<!--contact header-->
+<div class="header-section">
+    <h1>Contáctanos</h1>
+</div>
+<!-- end contact header-->
+<section id="firstq" class="quote-request">
+    <h2>Solicitar una <span class="highlight"> Cotización</span></h2>
+    <form action="send_quote.php" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Detalles de tu proyecto" required></textarea>
+        <button class="contact-button" type="submit">Enviar Solicitud</button>
+    </form>
+</section>
+<div class="tit-co">
+<h2>Información de Contacto</h2>
+</div>
+<section class="contacto-info">
+
+
+  <img class="svg-con" src="images/email.svg"/>  <p class="con-in">Email: <a href="mailto:Brandon@flintriverroofing.com">Brandon@flintriverroofing.com</a></p>
+    <img class="svg-con" src="images/phone.svg"/><p class="con-in">Teléfono: <a href="tel:+16782069725">+1 (678) 206-9725</a></p>
+  <img class="svg-con" src="images/locationfooter.svg" /> <p class="con-in">Dirección: 408 Rising Star Rd, Brooks, GA 30205</p>
+</section>
+
+<section class="send-review">
+    <h2>Envíanos una <span class="highlight"> Reseña</span></h2>
+    <form action="send_review.php" method="POST">
+        <input type="text" name="reviewer_name" placeholder="Nombre" required>
+        <textarea name="review" placeholder=" Reseña" required></textarea>
+        <button  class="contact-button" type="submit">Enviar Reseña</button>
+    </form>
+</section>
+
+<section class="send-message">
+    <h2>Envíanos un<span class="highlight">Mensaje</span></h2>
+    <form action="send_message.php" method="POST">
+        <input type="text" name="sender_name" placeholder="Nombre" required>
+        <input type="email" name="sender_email" placeholder="Email" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button  class="contact-button"type="submit">Enviar Mensaje</button>
+    </form>
+</section>
+
+<!--end contact page-->
+<div class="two-column-layout">
+<!-- Left Column: Google Map -->
+<div class="map-panel">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26679.91330397827!2d-84.4584299!3d33.2929465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe94c17b019a693f%3A0xd80e0194aa5bec83!2sFlint%20River%20Roofing!5e0!3m2!1ses-419!2sdo!4v1730378610747!5m2!1ses-419!2sdo" 
+        width="100%" 
+        height="450"
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+<!-- Right Column: Text Content -->
+<div class="text-panel">
+    <h2>¿Dónde  <span class="highlight">Encontrarnos?</span></h2>
+    <p>Estamos convenientemente ubicados en el corazón de la región y ofrecemos servicios en un área amplia para garantizar que la calidad en techado esté al alcance de todos.</p>
+    <button class="cta-button">Abrir en Google Maps</button>
+</div>
+</div>
+<!--end location-->
+
+
+
+     <!-- footer-->
+     <div class="three-column-layout">
+        <!-- 1st Column: Email -->
+        <div class="info-item">
+            <div class="image-placeholder">
+              <a class="links-on-footer" href="mailto:Brandon@flintriverroofing.com">  <img src="images/footeremail.svg" alt="Email Icon">
+            </div>
+            <div class="info-content">
+                <h3>Email</h3>
+                <p>Brandon@flintriverroofing.com</p>
+              </a>
+            </div>
+        </div>
+  
+        <!-- 2nd Column: Phone Number -->
+        <div class="info-item">
+            <div class="image-placeholder">
+                <a class="links-on-footer" href="tel:+678-206-9725"><img src="images/footer phone.svg" alt="Phone Icon">
+            </div>
+            <div class="info-content">
+                <h3>Número</h3>
+                <p>678-206-9725</p>
+              </a>
+            </div>
+        </div>
+  
+        <!-- 3rd Column: Address -->
+        <div class="info-item">
+            <div class="image-placeholder">
+                <img src="images/locationfooter.svg"Address Icon">
+            </div>
+            <div class="info-content">
+                <h3>Dirección</h3>
+                <p>408 Rising Star Rd | Brooks, GA 30205</p>
+            </div>
+        </div>
+    </div>
+  <!--continuum of footer-->
+    <div class="four-column-layout">
+      <!-- 1st Column: Company Information -->
+      <div class="info-column company-infofoot">
+         
+          <p class="infotxtcol"> En Flint River Roofing, nos enorgullecemos de proporcionar las mejores soluciones de techado para tu casa o negocio. Te trataremos con el máximo cuidado y profesionalismo. <br> Tu satisfacción es nuestra máxima prioridad y nos esforzamos por superar tus expectativas con cada proyecto.</p>
+      </div>
+  
+      <!-- 2nd Column: Menu Links -->
+      <div class="info-column menu-links">
+        
+          <ul>
+              <li class="footl"><a href="index.html">Inicio</a></li>
+              <li class="footl"><a href="about-us.html">Nosotros</a></li>
+              <li class="footl"><a href="our-services.html">Servicios</a></li>
+          </ul>
+      </div>
+  
+      <!-- 3rd Column: Additional Links -->
+      <div class="info-column additional-links">
+         
+          <ul>
+              <!--<li class="footl"><a  href="#" >Testimonials</a></li>-->
+              <li class="footl"><a href="blog.html">Blog</a></li>
+              <li class="footl"><a href="contact-us.html">Contáctenos</a></li>
+          </ul>
+      </div>
+  
+      <!-- 4th Column: Space for Logo -->
+      <div class="info-column logo-space">
+          <img class="footlogo"src="images/footerlogo.png" alt="Company Logo" />
+      </div>
+  </div>
+      <!--end footer-->
+  <!--language switcher-->
+  <div class="floating-language-switcher">
+      <button class="floating-language-btn" onclick="toggleLanguageDropdown()">🌍 Idioma</button>
+      <div id="languageDropdown" class="language-dropdown-menu">
+          <a href="contact-us.html" class="language-option">
+              <img src="images/usdflag.svg" alt="English Flag" class="flag-icon"> <p class="ic-flag">Engligh</p>
+          </a>
+          <a href="contacto.html" class="language-option">
+              <img src="images/spainflag.svg" alt="Spanish Flag" class="flag-icon"><p class="ic-flag">Español</p>
+          
+          </a>
+      </div>
+  </div>
+  
+  <!--end of language switcher-->
+  
+      <script src="script.js"></script> <!-- Link to JavaScript -->
+      <script src="slider-script.js"></script>
+      <script src="language-switcher.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
