@@ -48,18 +48,18 @@
         </div>
         <ul class="nav-links" id="nav-links">
             <button id="closeNavBtn">&times;</button> <!-- Close button -->
-            <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li> <a href="servicios.html">Servicios</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about-us.html">Nosotros</a></li>
+            <li> <a href="our-services.html">Servicios</a></li>
                  <!---<ul class="dropdown-content"
                     --<li><a href="#">Service 1</a></li>
                     <li><a href="#">Service 2</a></li>
                     <li><a href="#">Service 3</a></li>
                 </ul>
             </li> -->
-            <li><a href="blog-es.html">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="Galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contáctenos</a></li>
+            <li><a href="contact-us.html">Contáctenos</a></li>
         </ul>
         <div class="vertical-line"></div>
         <div class="contact-info">
@@ -81,75 +81,48 @@
         </div>
     </nav>
     <!--end navbar-->
-<!--contact header-->
-<div class="header-section">
-    <h1>Contáctanos</h1>
-</div>
-<!-- end contact header-->
-<section id="firstq" class="quote-request">
-    <h2>Solicitar una <span class="highlight"> Cotización</span></h2>
-    <form action="send_quote.php" method="POST">
-        <input type="text" name="name" placeholder="Nombre" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <textarea name="message" placeholder="Detalles de tu proyecto" required></textarea>
-        <button class="contact-button" type="submit">Enviar Solicitud</button>
-    </form>
-</section>
-<div class="tit-co">
-<h2>Información de Contacto</h2>
-</div>
-<section class="contacto-info">
 
-
-  <img class="svg-con" src="images/email.svg"/>  <p class="con-in">Email: <a href="mailto:Brandon@flintriverroofing.com">Brandon@flintriverroofing.com</a></p>
-    <img class="svg-con" src="images/phone.svg"/><p class="con-in">Teléfono: <a href="tel:+16782069725">+1 (678) 206-9725</a></p>
-  <img class="svg-con" src="images/locationfooter.svg" /> <p class="con-in">Dirección: 408 Rising Star Rd, Brooks, GA 30205</p>
-</section>
-
-<section class="send-review">
-    <h2>Envíanos una <span class="highlight"> Reseña</span></h2>
-    <form action="send_review.php" method="POST">
-        <input type="text" name="reviewer_name" placeholder="Nombre" required>
-        <textarea name="review" placeholder=" Reseña" required></textarea>
-        <button  class="contact-button" type="submit">Enviar Reseña</button>
-    </form>
-</section>
-
-<section class="send-message">
-    <h2>Envíanos un<span class="highlight">Mensaje</span></h2>
-    <form action="send_message.php" method="POST">
-        <input type="text" name="sender_name" placeholder="Nombre" required>
-        <input type="email" name="sender_email" placeholder="Email" required>
-        <textarea name="message" placeholder="Mensaje" required></textarea>
-        <button  class="contact-button"type="submit">Enviar Mensaje</button>
-    </form>
-</section>
-
-<!--end contact page-->
-<div class="two-column-layout">
-<!-- Left Column: Google Map -->
-<div class="map-panel">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26679.91330397827!2d-84.4584299!3d33.2929465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe94c17b019a693f%3A0xd80e0194aa5bec83!2sFlint%20River%20Roofing!5e0!3m2!1ses-419!2sdo!4v1730378610747!5m2!1ses-419!2sdo" 
-        width="100%" 
-        height="450"
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
-
-<!-- Right Column: Text Content -->
-<div class="text-panel">
-    <h2>¿Dónde  <span class="highlight">Encontrarnos?</span></h2>
-    <p>Estamos convenientemente ubicados en el corazón de la región y ofrecemos servicios en un área amplia para garantizar que la calidad en techado esté al alcance de todos.</p>
-    <button class="cta-button">Abrir en Google Maps</button>
-</div>
-</div>
-<!--end location-->
-
-
-
+    <div class="header-section">
+        <h1>Galería</h1>
+    </div>
+    <!--gallery-->
+    
+    <div class="gallery">
+        <!-- First Image -->
+        <div class="photos">
+            <img src="images/sliderim1.jpg" alt="Image 1">
+        </div>
+        <!-- Second Image -->
+        <div class="photos">
+            <img src="images/gal1.png" alt="Image 2">
+        </div>
+        <div class="photos">
+            <img src="images/gal2.png" alt="Image 2">
+        </div>
+        <div class="photos">
+            <img src="images/gal 3.png" alt="Image 2">
+        </div>
+        <div class="photos">
+            <img src="images/gal 4.png" alt="Image 2">
+        </div>
+        <div class="photos">
+            <img src="images/gal 5.png" alt="Image 2">
+        </div>
+        <div class="photos">
+            <img src="images/gal 6.png" alt="Image 2">
+        </div>
+        <div class="photos">
+            <img src="images/gal 7.png" alt="Image 2">
+        </div>
+        <!-- Add more images here -->
+    </div>
+    
+    <!-- Page Controls -->
+    <div class="controls">
+        <button class="prev" onclick="changePage(-1)">Atrás</button>
+        <button class="next" onclick="changePage(1)">Delante</button>
+    </div>
+    
      <!-- footer-->
      <div class="three-column-layout">
         <!-- 1st Column: Email -->
@@ -199,9 +172,9 @@
       <div class="info-column menu-links">
         
           <ul>
-              <li class="footl"><a href="inicio.html">Inicio</a></li>
-              <li class="footl"><a href="nosotros.html">Nosotros</a></li>
-              <li class="footl"><a href="servicios.html">Servicios</a></li>
+              <li class="footl"><a href="index.html">Inicio</a></li>
+              <li class="footl"><a href="about-us.html">Nosotros</a></li>
+              <li class="footl"><a href="our-services.html">Servicios</a></li>
           </ul>
       </div>
   
@@ -210,9 +183,10 @@
          
           <ul>
               <!--<li class="footl"><a  href="#" >Testimonials</a></li>-->
-              <li class="footl"><a href="blog-es.html">Blog</a></li>
-              <li class="footl"><a href="Galeria.html">Galería</a></li>
-              <li class="footl"><a href="contacto.html">Contáctenos</a></li>
+              <li class="footl"><a href="blog.html">Blog</a></li>
+              <li class="footl"><a href="Galeria.html"> Galería</a></li>
+             
+              <li class="footl"><a href="contact-us.html">Contáctenos</a></li>
           </ul>
       </div>
   
@@ -226,10 +200,10 @@
   <div class="floating-language-switcher">
       <button class="floating-language-btn" onclick="toggleLanguageDropdown()">🌍 Idioma</button>
       <div id="languageDropdown" class="language-dropdown-menu">
-          <a href="contact-us.html" class="language-option">
+          <a href="gallery.html" class="language-option">
               <img src="images/usdflag.svg" alt="English Flag" class="flag-icon"> <p class="ic-flag">Engligh</p>
           </a>
-          <a href="contacto.html" class="language-option">
+          <a href="Galeria.html" class="language-option">
               <img src="images/spainflag.svg" alt="Spanish Flag" class="flag-icon"><p class="ic-flag">Español</p>
           
           </a>
@@ -241,6 +215,7 @@
       <script src="script.js"></script> <!-- Link to JavaScript -->
       <script src="slider-script.js"></script>
       <script src="language-switcher.js"></script>
+      <script src="gallery.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

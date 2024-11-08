@@ -102,7 +102,8 @@ body {
   padding: 10px;
 }
 .logo img {
-  height: 80px;
+    width:98px;
+    height: auto;
 }
 button#closeNavBtn {
   display: block;
@@ -375,7 +376,7 @@ img {
 
 .text-overlay {
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 10%;
     color: white;
     text-align: left;
@@ -1005,7 +1006,7 @@ color: white;
            /* display: flex; */
            background-color: #000000;
            /* justify-content: space-between; */
-           padding: 20px 10px;
+           padding:20px 10px;
            flex-direction: column; 
            /* gap: 0px; */
         
@@ -1052,16 +1053,27 @@ color: white;
 /*Start of the end footer*/
 /* Four-column layout */
 .four-column-layout {
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr; /* Defines 4 equal columns */
+    gap: 20px; /* Space between grid items */
+
+
+
+
+    align-items: center;
+    /*grid-template-columns: repeat(1, 1fr);
+    /*display: grid;
     /* justify-content: space-between; */
     background-color: black;
     color: white;
     padding: 20px 10px;
     border-top: 1px #2a322a solid;
     justify-items: start;
-    }
+}
+.four-column-layout .info-column.company-infofoot {
+    grid-column: span 4; /* This takes up the full width of the row */
+
+}
 
 .infotxtcol{
    
@@ -1512,13 +1524,14 @@ input, textarea {
 /* Main Language Button */
 .floating-language-btn {
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color:black;
+    color:white;
     font-weight:bold;
-    background-color: #22d81f;
+    background-color: #1f8144;
+    border: solid 2px white;
     transition: background-color 0.3s;
 }
 
@@ -1565,9 +1578,46 @@ img.flag-icon {
     font-size:15px;
     font-weight:bold;
     text-decoration:none;
-/*END sitcher*/
 }
+/*GALLERY*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
+    gap: 16px; /* Space between images */
+    padding: 20px 10px
 }
+
+/* Each Photo */
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Keep images looking good despite size differences */
+}
+
+/* Controls (Buttons) */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.controls button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+/*END GAL*/
+}
+
 @media (min-width: 465px) and (max-width: 574px){
     /* Styles for extra small devices */
  /*UNDER CONSTRUCTION*/
@@ -1663,7 +1713,8 @@ img.flag-icon {
   padding: 10px;
 }
 .logo img {
-  height: 80px;
+    width:98px;
+    height: auto;
 }
 button#closeNavBtn {
   display: block;
@@ -1932,7 +1983,7 @@ img {
 
 .text-overlay {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 10%;
     color: white;
     text-align: left;
@@ -2562,7 +2613,7 @@ color: white;
            /* display: flex; */
            background-color: #000000;
            /* justify-content: space-between; */
-           padding: 20px 40px;
+           padding:20px 10px;
            flex-direction: column;
         
 }
@@ -2608,9 +2659,16 @@ color: white;
 /*Start of the end footer*/
 /* Four-column layout */
 .four-column-layout {
-    align-items: center;
-    grid-template-columns: repeat(1, 1fr);
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr; /* Defines 4 equal columns */
+    gap: 20px; /* Space between grid items */
+
+
+
+
+    align-items: center;
+    /*grid-template-columns: repeat(1, 1fr);
+    /*display: grid;
     /* justify-content: space-between; */
     background-color: black;
     color: white;
@@ -2618,8 +2676,11 @@ color: white;
     border-top: 1px #2a322a solid;
     justify-items: start;
 }
+.four-column-layout .info-column.company-infofoot {
+    grid-column: span 4; /* This takes up the full width of the row */
 
 }
+
 .infotxtcol{
    
     text-align:left;
@@ -3065,13 +3126,14 @@ input, textarea {
 /* Main Language Button */
 .floating-language-btn {
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color:black;
+    color:white;
     font-weight:bold;
-    background-color: #22d81f;
+    background-color: #1f8144;
+    border: solid 2px white;
     transition: background-color 0.3s;
 }
 
@@ -3119,6 +3181,44 @@ img.flag-icon {
     font-weight:bold;
     text-decoration:none;
 /*END sitcher*/
+/*GALLERY*/
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
+    gap: 16px; /* Space between images */
+    padding: 30px 10px
+}
+
+/* Each Photo */
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Keep images looking good despite size differences */
+}
+
+/* Controls (Buttons) */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.controls button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+/*END GAL*/
 }
 
 
@@ -3217,7 +3317,8 @@ img.flag-icon {
   padding: 10px;
 }
 .logo img {
-  height: 80px;
+    width:98px;
+    height: auto;
 }
 button#closeNavBtn {
   display: block;
@@ -3474,7 +3575,7 @@ end*/
 }
 .text-overlay {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 10%;
     color: white;
     text-align: left;
@@ -3491,13 +3592,7 @@ img {
     height: auto;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    color: white;
-    text-align: left;
-}
+
 
 h2 {
     font-family:'roboto';
@@ -4668,8 +4763,47 @@ img.flag-icon {
     font-size:15px;
     font-weight:bold;
     text-decoration:none;
-/*END sitcher*/
 }
+/*END sitcher*/
+/*GALLERY*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
+    gap: 16px; /* Space between images */
+    padding: 50px 30px
+}
+
+/* Each Photo */
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Keep images looking good despite size differences */
+}
+
+/* Controls (Buttons) */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.controls button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+/*END GAL*/
+
+
 
 
 /* Medium Devices (tablets, 768px and up) */
@@ -4767,7 +4901,8 @@ img.flag-icon {
   padding: 10px;
 }
 .logo img {
-  height: 80px;
+  width:98px;
+  height: auto;
 }
 button#closeNavBtn {
   display: block;
@@ -5024,7 +5159,7 @@ end*/
 }
 .text-overlay {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 10%;
     color: white;
     text-align: left;
@@ -6147,13 +6282,14 @@ input, textarea {
 /* Main Language Button */
 .floating-language-btn {
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color:black;
+    color:white;
     font-weight:bold;
-    background-color: #22d81f;
+    background-color: #1f8144;
+    border: solid 2px white;
     transition: background-color 0.3s;
 }
 
@@ -6200,9 +6336,48 @@ img.flag-icon {
     font-size:15px;
     font-weight:bold;
     text-decoration:none;
+}
 /*END sitcher*/
+/*GALLERY*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
+    gap: 16px; /* Space between images */
+    padding: 40px 50px
 }
+
+/* Each Photo */
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Keep images looking good despite size differences */
 }
+
+/* Controls (Buttons) */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.controls button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+/*END GAL*/
+
+}
+
 
 
  /* Large Devices (desktops, 992px and up) */
@@ -6341,7 +6516,8 @@ button#closeNavBtn {
 }
 
 .logo img {
-    height: 103px; /* Adjust logo size */
+    width:92px;
+    height: auto; /* Adjust logo size */
 }
 
 .nav-links {
@@ -6500,7 +6676,7 @@ button#closeNavBtn {
 }
 .text-overlay {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 10%;
     color: white;
     text-align: left;
@@ -6517,13 +6693,7 @@ img {
     height: auto;
 }
 
-.text-overlay {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    color: white;
-    text-align: left;
-}
+
 
 h2 {
     font-family:'roboto';
@@ -7604,14 +7774,16 @@ input, textarea {
 /* Main Language Button */
 .floating-language-btn {
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color:black;
+    color:white;
     font-weight:bold;
-    background-color: #22d81f;
+    background-color: #1f8144;
+    border: solid 2px white;
     transition: background-color 0.3s;
+
 }
 
 /* Dropdown Menu */
@@ -7660,6 +7832,44 @@ img.flag-icon {
 /*END sitcher*/
 }
 /*END SERVICES*/
+/*GALLERY*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
+    gap: 16px; /* Space between images */
+    padding: 50px 70px
+}
+
+/* Each Photo */
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Keep images looking good despite size differences */
+}
+
+/* Controls (Buttons) */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.controls button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+/*END GAL*/
+
  }
 
 
@@ -7795,7 +8005,8 @@ button#closeNavBtn {
 }
 
 .logo img {
-    height: 103px; /* Adjust logo size */
+    width:105px;
+    height: auto; /* Adjust logo size */
 }
 
 .nav-links {
@@ -7933,7 +8144,8 @@ button#closeNavBtn {
     position: relative;
     max-width: 100%;
     margin: auto;
-    margin-top: -40px;
+    margin-top: -0px;
+
 }
 
 .slider {
@@ -7954,30 +8166,35 @@ button#closeNavBtn {
 }
 .text-overlay {
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 10%;
     color: white;
     text-align: left;
-    z-index: 2; /* Ensure the text is above the overlay */
+    z-index: 2; /* Ensure the text is above the overlay 
 }
 
 .slide {
+
+    /*
     display: none;
-    position: relative;
+    position: relative;*/
+  /*  position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -20%); 
+    width: 100%;    /* Ensure the image doesn’t exceed container width */
+ /*  height: 100%;   /* Ensure the image doesn’t exceed container height */
 }
 
-img {
+.slide img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    margin-top: -10%;
+   
 }
 
-.text-overlay {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    color: white;
-    text-align: left;
-}
+
 
 h2 {
     font-family:'roboto';
@@ -9065,13 +9282,14 @@ input, textarea {
 /* Main Language Button */
 .floating-language-btn {
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    color:black;
+    color:white;
     font-weight:bold;
-    background-color: #22d81f;
+    background-color: #1f8144;
+    border: solid 2px white;
     transition: background-color 0.3s;
 }
 
@@ -9120,4 +9338,63 @@ img.flag-icon {
     text-decoration:none;
 /*END sitcher*/
 }
+/*GALLERY*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
+    gap: 16px; /* Space between images */
+    padding: 50px 70px
+}
+
+/* Each Photo */
+.photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Keep images looking good despite size differences */
+}
+
+/* Controls (Buttons) */
+.controls {
+    text-align: center;
+    margin-top: 20px;
+    padding: 22px;
+}
+
+.controls button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+/*END GAL*/
+}
+
+@media (min-width: 1500px) {
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-top: -20%;
+    }
+    .slider {
+        position: relative;
+        overflow: hidden;
+        height: 660px;
+    }
+    .text-overlay {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: white;
+        text-align: left;
+        z-index: 2;
+    }
 }
