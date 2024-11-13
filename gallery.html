@@ -85,7 +85,6 @@
         <h1>Gallery</h1>
     </div>
     <!--gallery-->
-    
     <div class="gallery">
         <!-- First Image -->
         <div class="photos">
@@ -116,11 +115,19 @@
         <!-- Add more images here -->
     </div>
     
-    <!-- Page Controls -->
-    <div class="controls">
-        <button class="prev" onclick="changePage(-1)">Prev</button>
-        <button class="next" onclick="changePage(1)">Next</button>
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span id="closeBtn" class="close-btn">&times;</span>
+        <img id="lightboxImage" class="lightbox-image" src="" alt="">
     </div>
+    
+    <!-- Page Controls -->
+<div class="controls">
+    <button class="prev" onclick="changePage(-1)">Prev</button>
+    <button class="next" onclick="changePage(1)">Next</button>
+</div>
+
+    
     <!-- footer-->
     <div class="three-column-layout">
         <!-- 1st Column: Email -->
@@ -208,11 +215,9 @@
   </div>
   
   <!--end of language switcher-->
-  
-      <script src="script.js"></script> <!-- Link to JavaScript -->
-      <script src="slider-script.js"></script>
-      <script src="language-switcher.js"></script>
-      <script src="gallery.js"></script>
+  <script src="gallery.js"></script>
+  <script src="script.js"></script> <!-- Link to JavaScript -->
+     <script src="language-switcher.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

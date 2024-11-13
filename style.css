@@ -9,6 +9,9 @@ body {
 @media (min-width: 200px) and (max-width: 465px)  {
     /* Styles for extra small devices */
  /*UNDER CONSTRUCTION*/
+ .svg-con{
+    width: 21%;
+}
  .under-c{
     display:flex;
     padding: 30px 30px 30px 30px;
@@ -268,14 +271,7 @@ end*/
     margin: 0 10px; /* Closer spacing */
 }
 
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: left;
-    padding: 0px;
-    background-color:white;
-    color: white;
-    flex-direction:column;
+
 }
 
 .schedule, .call-us {
@@ -1488,6 +1484,7 @@ input, textarea {
     padding: 10px 10px 32px 10px;
     background-color: white;
     border-radius: 8px;
+    flex-direction: column;
     align-items: flex-start!important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -1497,7 +1494,7 @@ input, textarea {
     text-align: left;
 }
 .svg-con{
-    width:14%;
+    width:14%!important;
 }
 .con-in{
     font-family:'roboto';
@@ -1587,6 +1584,44 @@ img.flag-icon {
     text-decoration:none;
 }
 /*GALLERY*/
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 .gallery {
     display: flex;
     /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
@@ -1624,7 +1659,7 @@ img.flag-icon {
     background-color: #0056b3;
 }
 /*END GAL*/
-}
+
 
 @media (min-width: 465px) and (max-width: 574px){
     /* Styles for extra small devices */
@@ -3189,9 +3224,47 @@ img.flag-icon {
     font-family:'roboto';
     font-size:15px;
     font-weight:bold;
-    text-decoration:none;
+    text-decoration:none;}
 /*END sitcher*/
 /*GALLERY*/
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+
 }
 .gallery {
     display: flex;
@@ -4777,6 +4850,44 @@ img.flag-icon {
 }
 /*END sitcher*/
 /*GALLERY*/
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -6350,6 +6461,44 @@ img.flag-icon {
 }
 /*END sitcher*/
 /*GALLERY*/
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 2fr);/* Flexible columns */
@@ -7630,7 +7779,16 @@ color: white;
 }
 .image-placeholderout{
 padding:0;
+display: flex;
+flex-direction: column;
+height: 100%;
 }
+.image-placeholderou{
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
 
 .image-placeholderser img {
     max-width: 100%;
@@ -7844,6 +8002,44 @@ img.flag-icon {
 }
 /*END SERVICES*/
 /*GALLERY*/
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
@@ -8734,7 +8930,7 @@ color: white;
 }
 .image-series img {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     position: absolute; /* Positions images on top of each other */
     top: 0;
@@ -8995,8 +9191,9 @@ color: white;
 /* Team Section */
 .team-section {
     margin-top: 10px; /* Space above team section */
-    display: flex;
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
     flex-wrap: wrap; /* Wrap team members */
     justify-content: space-between; /* Space between team members */
     background-color:#00613C;
@@ -9015,6 +9212,8 @@ color: white;
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Circular images */
     margin-bottom: 10px; /* Space below images */
+    width:100%;
+
 }
 
 /* Member Name and Role */
@@ -9049,6 +9248,8 @@ color: white;
 }
 
 .ab-titleteam{
+    grid-column: 1 / -1;
+    grid-row: 1;
     font-family:'roboto';
     font-size:33px;
     font-weight:bold;
@@ -9136,7 +9337,14 @@ color: white;
 }
 .image-placeholderout{
 padding:0;
+display:flex;
+flex-direction: column;
 }
+.image-placeholderou{
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    }
 
 .image-placeholderser img {
     max-width: 100%;
@@ -9257,13 +9465,14 @@ input, textarea {
     background-color: white;
     border-radius: 8px;
     align-items:center;
+    flex-direction:column;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .tit-co{
     padding:70px 70px 12px 70px;
 }
 .svg-con{
-    width:8%;
+    width: 8%;
 }
 .con-in{
     font-family:'roboto';
@@ -9350,6 +9559,46 @@ img.flag-icon {
 /*END sitcher*/
 }
 /*GALLERY*/
+/*OTHER GAL CSS*/
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Flexible columns */
@@ -9359,10 +9608,14 @@ img.flag-icon {
 
 /* Each Photo */
 .photos img {
+    cursor: pointer;
     width: 100%;
     height: 100%;
     border-radius: 8px;
     object-fit: cover; /* Keep images looking good despite size differences */
+}
+.photos img:hover {
+    opacity: 0.8;
 }
 
 /* Controls (Buttons) */
@@ -9389,6 +9642,46 @@ img.flag-icon {
 }
 
 @media (min-width: 1500px) {
+
+
+    /* Lightbox Modal */
+.lightbox-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-image {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
     .slide img {
         width: 100%;
         height: auto;
@@ -9408,4 +9701,74 @@ img.flag-icon {
         text-align: left;
         z-index: 2;
     }
+    /*about us page*/ 
+    /* Team Section */
+.team-section {
+    margin-top: 10px; /* Space above team section */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+    flex-wrap: wrap; /* Wrap team members */
+    justify-content: space-between; /* Space between team members */
+    background-color:#00613C;
+}
+
+.team-member {
+    flex: 1 0 140px; /* Flex for responsiveness with minimum width */
+    margin: 10px; /* Space around each member */
+    background-color: #eaeaea; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside member boxes */
+}
+
+.member-image {
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Circular images */
+    margin-bottom: 10px; /* Space below images */
+    width:100%;
+
+}
+
+/* Member Name and Role */
+.team-member h4 {
+    margin: 10px 0 5px; /* Space above and below */
+    font-size: 20px; /* Size for member names */
+}
+
+.team-member p {
+    margin: 0; /* Remove margin from paragraph */
+    font-size: 16px; /* Size for roles */
+}
+.ab-title{
+    font-family:'roboto';
+    font-size:33px;
+    font-weight:bold;
+}
+.ab-titleceo {
+    font-family:'roboto';
+    font-size:33px;
+    font-weight:bold;
+    text-align:left;
+}
+.mission-statement{
+    font-family:'roboto';
+    font-size:15px;
+    font-weight:400;
+    color:#000000;
+    line-height:1.5;
+    padding-bottom: 12px;
+
+}
+
+.ab-titleteam{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-family:'roboto';
+    font-size:33px;
+    font-weight:bold;
+    color:white;
+    width:100%;
+
+}
 }

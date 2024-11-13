@@ -1,33 +1,28 @@
-let currentPage = 1; // Start at the first page
-const maxImagesPerPage = 10; // Limit images to 10 per page
-const allPhotos = document.querySelectorAll('.photo'); // Get all images
-const totalPhotos = allPhotos.length; // Total number of images
+document.addEventListener("DOMContentLoaded", () => {
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const closeBtn = document.getElementById('closeBtn');
 
-// Show images for the current page
-function displayPage(page) {
-    const start = (page - 1) * maxImagesPerPage;
-    const end = page * maxImagesPerPage;
+    // Ensure modal is hidden initially
+    lightboxModal.style.display = 'none';
 
-    // Show or hide images depending on the current page
-    allPhotos.forEach((photo, index) => {
-        if (index >= start && index < end) {
-            photo.style.display = 'block'; // Show the photo
-        } else {
-            photo.style.display = 'none'; // Hide the photo
+    // Show modal when an image is clicked
+    document.querySelectorAll('.photos img').forEach(photo => {
+        photo.addEventListener('click', () => {
+            lightboxImage.src = photo.src; // Set the image source
+            lightboxModal.style.display = 'flex'; // Show modal only on click
+        });
+    });
+
+    // Hide modal when close button is clicked
+    closeBtn.addEventListener('click', () => {
+        lightboxModal.style.display = 'none'; // Hide modal
+    });
+
+    // Hide modal when clicking outside the image
+    lightboxModal.addEventListener('click', (event) => {
+        if (event.target === lightboxModal) {
+            lightboxModal.style.display = 'none'; // Hide modal
         }
     });
-}
-
-// Change to the next or previous page
-function changePage(direction) {
-    const newPage = currentPage + direction;
-
-    // Prevent going out of range
-    if (newPage < 1 || newPage > Math.ceil(totalPhotos / maxImagesPerPage)) return;
-
-    currentPage = newPage;
-    displayPage(currentPage);
-}
-
-// Initial display of the first page
-displayPage(currentPage);
+});
